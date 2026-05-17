@@ -2,7 +2,7 @@ aid: copa
 url: >-
   https://raw.githubusercontent.com/api-evangelist/copa/refs/heads/main/apis.yml
 name: Copa (Project Copacetic)
-x-type: opensource
+kind: opensource
 description: >-
   Project Copacetic (Copa) is an open source command line tool that patches
   container images directly using BuildKit, without requiring a full image
@@ -118,11 +118,11 @@ common:
     url: https://project-copacetic.github.io/copacetic/website/quick-start/
   - type: GitHubRepository
     url: https://github.com/project-copacetic/copacetic
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/project-copacetic
   - type: Issue Tracker
     url: https://github.com/project-copacetic/copacetic/issues
-  - type: Change Log
+  - type: ChangeLog
     url: https://github.com/project-copacetic/copacetic/releases
   - type: License
     url: https://github.com/project-copacetic/copacetic/blob/main/LICENSE
