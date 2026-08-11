@@ -124,6 +124,10 @@ apis:
       - Communicating remediation status downstream
       - Reducing scanner noise from CVEs already patched in place
 common:
+  - type: SecurityPolicy
+    url: https://github.com/project-copacetic/copacetic/blob/main/SECURITY.md
+  - type: CodeOfConduct
+    url: https://github.com/project-copacetic/copacetic/blob/main/CODE_OF_CONDUCT.md
   - type: Website
     url: https://project-copacetic.github.io/copacetic/website/
   - type: Documentation
