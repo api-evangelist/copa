@@ -31,6 +31,16 @@ tags:
   - CNCF Sandbox
   - Container Patching
   - Containers
+  - Open-Source
+  - Security
+  - Trivy
+  - Vulnerability Management
+tags_raw:
+  - BuildKit
+  - CLI
+  - CNCF Sandbox
+  - Container Patching
+  - Containers
   - Open Source
   - Security
   - Trivy
