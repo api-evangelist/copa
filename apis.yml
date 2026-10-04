@@ -14,14 +14,17 @@ description: >-
   Vulnerability Exchange (VEX) and pluggable scanner interface.
 deliveryModel:
   model: unknown
+  license_evidence:
+    not_product:
+    - project-copacetic/copacetic
   open_source: unknown
   commercial: false
   callable_host: false
   label: Delivery model not determined — needs a product licence on record
   confidence: low
   source:
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -42,7 +45,7 @@ tags:
   - CNCF Sandbox
   - Container Patching
   - Containers
-  - Open-Source
+  - Open Source
   - Security
   - Trivy
   - Vulnerability Management
@@ -56,6 +59,7 @@ tags_raw:
   - Security
   - Trivy
   - Vulnerability Management
+  - Open-Source
 created: '2025-01-01'
 modified: '2026-04-28'
 specificationVersion: '0.23'
@@ -68,7 +72,6 @@ apis:
       optional vulnerability report and produces a new tagged image with
       OS-level package vulnerabilities remediated via BuildKit.
     humanURL: https://project-copacetic.github.io/copacetic/website/
-    baseURL: https://project-copacetic.github.io
     tags:
       - CLI
       - Patching
@@ -102,7 +105,6 @@ apis:
       supports Trivy JSON reports and provides documentation for adding
       new scanner plugins.
     humanURL: https://project-copacetic.github.io/copacetic/website/scanner-plugins/
-    baseURL: https://project-copacetic.github.io
     tags:
       - Plugins
       - Scanners
@@ -127,7 +129,6 @@ apis:
       downstream consumers verify that an image has been remediated and
       track residual risk.
     humanURL: https://project-copacetic.github.io/copacetic/website/output/
-    baseURL: https://project-copacetic.github.io
     tags:
       - OpenVEX
       - SBOM
