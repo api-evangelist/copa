@@ -66,63 +66,98 @@
 
 Project Copacetic (Copa) is an open source command line tool that patches container images directly using BuildKit, without requiring a full image rebuild. Copa parses vulnerability scan reports from Trivy and other scanners, applies the corresponding OS package updates via the appropriate package manager (apt, apk, dnf, tdnf, yum, zypper), and produces a new container image with a patched layer. Copa supports multi-platform images, distroless images, and custom scanner plugins through the Vulnerability Exchange (VEX) and pluggable scanner interface.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/copa/refs/heads/main/apis.yml)
+**Areas:** BuildKit · CLI · CNCF Sandbox · Container Patching · Containers · Open Source · Security · Trivy · Vulnerability Management
 
-## Tags
+## Copa (Project Copacetic) on APIs.io
 
-- BuildKit, CLI, CNCF Sandbox, Container Patching, Containers, Open Source, Security, Trivy, Vulnerability Management
+Everything profiled for Copa (Project Copacetic) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/copa/](https://apis.io/providers/copa/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (3)
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-04-28
+- [Copa CLI](https://apis.io/apis/copa/cli/) — The copa command line interface used to patch container images. The core subcommand `copa patch` accepts an image reference and an optional vulnerability…
+- [Copa Scanner Plugin Interface](https://apis.io/apis/copa/scanner-plugins/) — Copa exposes a plugin interface that allows third-party vulnerability scanners to feed reports into the patcher. Out of the box, Copa supports Trivy JSON…
+- [Copa VEX Output](https://apis.io/apis/copa/vex/) — Copa can emit a Vulnerability Exchange (VEX) document describing which CVEs were patched. VEX documents help security teams and downstream consumers verify…
 
-## APIs
+### Published properties
 
-### Copa CLI
-The copa command line interface used to patch container images. The core subcommand `copa patch` accepts an image reference and an optional vulnerability report and produces a new tagged image with OS-level package vulnerabilities remediated via BuildKit.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-**Human URL:** [https://project-copacetic.github.io/copacetic/website/](https://project-copacetic.github.io/copacetic/website/)
+#### Plans and pricing (1)
 
-#### Tags
-- CLI, Patching
+Published plans, tiers and prices.
 
-#### Properties
-- [Documentation](https://project-copacetic.github.io/copacetic/website/)
-- [Quick Start](https://project-copacetic.github.io/copacetic/website/quick-start/)
-- [GitHubRepository](https://github.com/project-copacetic/copacetic)
-- [License](https://github.com/project-copacetic/copacetic/blob/main/LICENSE)
-- [Issue Tracker](https://github.com/project-copacetic/copacetic/issues)
+- [Copa Plans Pricing](https://apis.io/plans/copa/copa-plans-pricing/)
 
-### Copa Scanner Plugin Interface
-Copa exposes a plugin interface that allows third-party vulnerability scanners to feed reports into the patcher.
+#### Rate limits (1)
 
-**Human URL:** [Scanner plugins](https://project-copacetic.github.io/copacetic/website/scanner-plugins/)
+Published request limits.
 
-#### Tags
-- Plugins, Scanners, Trivy
+- [Copa Rate Limits](https://apis.io/rate-limits/copa/copa-rate-limits/)
 
-### Copa VEX Output
-Copa can emit a Vulnerability Exchange (VEX) document describing which CVEs were patched.
+#### FinOps (1)
 
-**Human URL:** [Output options](https://project-copacetic.github.io/copacetic/website/output/)
+What the API costs to run, by operation.
 
-#### Tags
-- OpenVEX, SBOM, VEX
+- [Copa Finops](https://apis.io/finops/copa/copa-finops/)
 
-## Common Properties
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://project-copacetic.github.io/copacetic/website/)
-- [Quick Start](https://project-copacetic.github.io/copacetic/website/quick-start/)
-- [GitHubRepository](https://github.com/project-copacetic/copacetic)
-- [GitHub Organization](https://github.com/project-copacetic)
-- [Issue Tracker](https://github.com/project-copacetic/copacetic/issues)
-- [Change Log](https://github.com/project-copacetic/copacetic/releases)
-- [License](https://github.com/project-copacetic/copacetic/blob/main/LICENSE)
-- [Community](https://github.com/project-copacetic/copacetic/blob/main/CONTRIBUTING.md)
+- [Documentation](https://project-copacetic.github.io/copacetic/website/quick-start/)
+- [Changelog](https://github.com/project-copacetic/copacetic/releases)
+- [GitHub](https://github.com/project-copacetic)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 15.0** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/copa/](https://apis.io/providers/copa/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Copa (Project Copacetic): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/copa/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
